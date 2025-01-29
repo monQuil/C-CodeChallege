@@ -16,11 +16,9 @@ public class OldPhone
 		
 		//Defined variables
 		string finalresult;
-		
+	    
 		//get finalresult
-		
 		finalresult = OldPhonePad(userInput);
-        
 		//Print result
 		Console.WriteLine("The result = "+ finalresult);
     }
@@ -30,8 +28,8 @@ public class OldPhone
     //check if the user input end with "#" character
 	if (userInput.EndsWith("#")){
 		
-		//remove "#" character, excluded in validation of input
-	   userInput = userInput.Remove(userInput.Length - 1);
+            //remove "#" character, excluded in validation of input
+	    userInput = userInput.Remove(userInput.Length - 1);
 	   
 	
 	   //split inputs by space and store to array string.
@@ -47,7 +45,7 @@ public class OldPhone
 		}
 		//get total numbers of character
 		 int keyPadNum = Convert.ToInt32(input.Substring(0, 1));
-	    int numofChar = input.Length;
+	         int numofChar = input.Length;
 		 
 		 switch(keyPadNum)
 		 {
@@ -57,30 +55,30 @@ public class OldPhone
 			   switch (numofChar)
 			 	{
 				   
-			  		case 1:
-			       		result = result + "A";
-				   		break;
-			  		case 2:
+			  	   case 1:
+			       	        result = result + "A";
+				   	break;
+			  	   case 2:
 			       		result = result + "B";
-				   		break;
-			  		case 3:
+				   	break;
+			  	    case 3:
 			       		result = result + "C";
-				   		break;
+				   	break;
 			 	}
 				break;
 			 case 2:
 				switch (numofChar)
 			 	{
 			
-			  		case 1:
+			  	    case 1:
 			       		result = result + "D";
-				   		break;
-			  		case 2:
+				   	break;
+			            case 2:
 			       		result = result + "E";
-				   		break;
-			  		case 3:
+				   	break;
+			  	    case 3:
 			       		result = result + "F";
-				   		break;
+				   	break;
 			 	}
 				break;
 		 	}
